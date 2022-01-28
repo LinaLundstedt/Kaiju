@@ -1,0 +1,21 @@
+:: S01 {"position":"869,336.5","size":"100,100"}
+Yeah...* I don't usually get out much.* But I liked that picture of you crushing the aztecs ruins.+ I'm a sucker for historical stuff!
+
+
+[[I usually destroy more urban places%1||S03]]
+[[Have you destroyed anything historical?%5||S02]]
+
+:: S03 {"position":"785,533.5","size":"100,100"}
+I was actually one of the monsters who lazered Versailles.* Not gonna lie...*BEST day of my life!
+
+[[That's so impressive!%1|END]]
+[Sure, Versaille is alright. But I ate one of the mummies from the Egyptian pyramids%5||END]
+
+:: S02 {"position":"1043,524.5","size":"100,100"}
+uhu...*So where are you from anyway?
+
+[[I come from a family of mutaded jellyfish%1||END]]
+[[I'm from the ocean%5||END]]
+
+:: END {"position":"885,692.5","size":"100,100"}
+Double-click this passage to edit it.
