@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 
 public class DateDialogueData : MonoBehaviour
 {
+    public string DateName;
     public TextAsset twineText;
     public Dejt dejt;
 
@@ -18,20 +19,6 @@ public class DateDialogueData : MonoBehaviour
         //Has to do this because of the text format that's downloaded
         string text = Regex.Replace(txt.text, "{.*?}", string.Empty);
         string[] blocks = text.Split(':');
-
-        //Mostly for debugging, to see where there's a problem 
-        List<string> pathTtitles = new List<string>();
-        //Answer from Player
-        List<string> responses = new List<string>();
-        //Inte Done, but to show feelings
-        List<string> feelings = new List<string>();
-        //Next node
-        List<string> destinations = new List<string>();
-        //What the date answers
-        List<string> dateTxts = new List<string>();
-        //All nodes in the date
-        List<Nodes> allNodes = new List<Nodes>();
-        string feeling = string.Empty;
 
         string CurrentLine;
 
@@ -69,15 +56,13 @@ public class DateDialogueData : MonoBehaviour
 
                             string love;
 
-                            
-                            CurrentLine = Questions[f].Remove(Questions[f].Length - 3);
+                            //get question before the lovepoints and destionation
+                            CurrentLine = Questions[f].Substring(0, Questions[f].LastIndexOf("%"));
                             thisQuestion = CurrentLine;
 
                             //split between | to get both question and destination
                             //Get the love points
-
-                            love = CurrentLine.Split('%', '|')[1];
-                            Debug.Log(love);
+                            love = Questions[f].Split('%', '|')[1];
                             thisLove = Int32.Parse(love);
 
                             CurrentLine = Questions[f].Remove(Questions[f].Length - 3);
@@ -101,6 +86,7 @@ public class DateDialogueData : MonoBehaviour
                                     question.question = thisQuestion;
                                     question.lovePoints = thisLove;
                                     question.destination = thisDestination;
+
 
                                     node.questions.Add(question);
                                 }

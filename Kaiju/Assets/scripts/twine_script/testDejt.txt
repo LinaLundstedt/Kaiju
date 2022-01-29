@@ -1,21 +1,40 @@
-:: S01 {"position":"869,336.5","size":"100,100"}
-Yeah...* I don't usually get out much.* But I liked that picture of you crushing the aztecs ruins.+ I'm a sucker for historical stuff!
+:: S01 {"position":"925,367.5","size":"100,100"}
+Yeah...* I don't usually get out much.* But I liked that picture of you crushing the aztecs ruins.* I'm a sucker for historical stuff!
 
+[[I usually destroy more urban places%1|S03]]
+[[Have you destroyed anything historical yourself?%5|S02]]
 
-[[I usually destroy more urban places%1||S03]]
-[[Have you destroyed anything historical?%5||S02]]
+:: S03 {"position":"802,528.5","size":"100,100"}
+Uhu...* That's not really my thing.* So where are you from anyway?
 
-:: S03 {"position":"785,533.5","size":"100,100"}
-I was actually one of the monsters who lazered Versailles.* Not gonna lie...*BEST day of my life!
+[[I'm from the Japanese coast%3|S04]]
+[[I'm from a family of mutaded jellyfish outside of Fukushima%1|S05]]
 
-[[That's so impressive!%1|END]]
-[Sure, Versaille is alright. But I ate one of the mummies from the Egyptian pyramids%5||END]
+:: S02 {"position":"1069,505.5","size":"100,100"}
+I ruiend a couple of castles back in college* But nowadays I prefer to stay in my cave.* I go out to get me a virgin from the surrounding villages every now and then.* But I'm more of a mythical monster* I don't feel the need to be all out there
 
-:: S02 {"position":"1043,524.5","size":"100,100"}
-uhu...*So where are you from anyway?
+[[I also like eating out!%1|S07]]
+[[Monsters today are too focused on exposure%5|S06]]
 
-[[I come from a family of mutaded jellyfish%1||END]]
-[[I'm from the ocean%5||END]]
+:: END {"position":"966,884.5","size":"100,100"}
+Well...* GET RESULTS
 
-:: END {"position":"885,692.5","size":"100,100"}
-Double-click this passage to edit it.
+:: S04 {"position":"750,672.5","size":"100,100"}
+That's cool!* I'm from a deep forest in Poland myself.
+
+[[Fascinating! Maybe we could continue this over a couple of businessmen at my place?%3|END]]
+
+:: S05 {"position":"907,672.5","size":"100,100"}
+Oh...*So you're a chemical freak of nature type of monster.*I'm more of a mythical being myself.*Naturally born out of people's fears and imaginations.
+
+[[Fascinating! Maybe we could continue this over a couple of businessmen at my place?%3|END]]
+
+:: S06 {"position":"1210,680.5","size":"100,100"}
+You know what?*They really are!*I could tell immediately that you're the type of monster who prefers lurking to showing off.
+
+[[Fascinating! Maybe we could continue this over a couple of businessmen at my place?%3|END]]
+
+:: S07 {"position":"1038,676.5","size":"100,100"}
+I actually just get the virgins on my way home*But I prepare and cook them at my cave*Human babies on my own sourdough toast*There's nothing better!*What do you like eating?
+
+[[Fascinating! Maybe we could continue this over a couple of businessmen at my place?%3|END]]

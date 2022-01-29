@@ -10,9 +10,11 @@ public class DisplayDialogue : MonoBehaviour
     Text displayTxt;
     public Image playerimg;
     public Image DateImg;
+    public Slider loveSlider;
     public GameObject AnswerPrefab;
     public GameObject questionsPanel;
     public RectTransform displaySquare;
+    public Text DateName;
 
     DateDialogueData dejtData;
 
@@ -27,8 +29,6 @@ public class DisplayDialogue : MonoBehaviour
     int currentSenNr = 0;
     int fullSentanceNr = -1;
 
-
-
     Nodes currentNode;
     Nodes nextNode = null;
     string FullTalk;
@@ -41,7 +41,9 @@ public class DisplayDialogue : MonoBehaviour
         Audio = gameObject.GetComponent<AudioSource>();
         Date = GameObject.FindGameObjectWithTag("Date");
         dejtData = Date.GetComponent<DateDialogueData>();
-
+        playerimg.gameObject.SetActive(false);
+        DateImg.gameObject.SetActive(false);
+        DateName.text = dejtData.DateName;
     }
 
     void Start()
@@ -66,6 +68,7 @@ public class DisplayDialogue : MonoBehaviour
                 {
                     playerTalking = false;
                     SetPath(nextNode);
+
                 }
 
 
@@ -80,9 +83,11 @@ public class DisplayDialogue : MonoBehaviour
 
                 if (dateAnswer && !playerTalking)
                 {
+                    //Change picture of who's talking
+                    playerimg.gameObject.SetActive(false);
+                    DateImg.gameObject.SetActive(true);
                     nextSentence = SentenceCut(currentSenNr, currentNode.clientTxt);
                     StartCoroutine(TypeText(nextSentence, displayTxt, DateVoice));
-                    //currentSenNr = 0;
                 }
 
 
@@ -104,14 +109,13 @@ public class DisplayDialogue : MonoBehaviour
         displayTxt.text = string.Empty;
     }
 
-    public void AskQuestion(string question, string path)
+    public void AskQuestion(string question, string path, int pnts)
     {
         GameObject q = createQuestion(question);
-        q.GetComponent<Button>().onClick.AddListener(() => { SetNode(q, path, question); });
-
+        q.GetComponent<Button>().onClick.AddListener(() => { SetNode(q, path, question, pnts); });
     }
 
-    public void SetNode(GameObject question, string path, string fullTalk)
+    public void SetNode(GameObject question, string path, string fullTalk, int pnts)
     {
        
         if (question != null)
@@ -123,15 +127,23 @@ public class DisplayDialogue : MonoBehaviour
                     nextNode = dejtData.dejt.nodes[i];
                 }
             }
+            //Give love points
+            Debug.Log(pnts);
+           
             //Make the button go to next path
 
-            question.GetComponent<Button>().onClick.AddListener(() => { playerTalk(fullTalk); });
+            question.GetComponent<Button>().onClick.AddListener(() => { playerTalk(fullTalk);  loveSlider.value += pnts;});
         }
     }
 
     void playerTalk(string SpeeachString)
     {
         playerTalking = true;
+
+        //Change picture of who's talking
+        playerimg.gameObject.SetActive(true);
+        DateImg.gameObject.SetActive(false);
+
         foreach (Transform child in questionsPanel.transform)
         {
             GameObject.Destroy(child.gameObject);
@@ -177,7 +189,7 @@ public class DisplayDialogue : MonoBehaviour
                 return;
             }
 
-                AskQuestion(node.questions[i].question, node.questions[i].destination);
+                AskQuestion(node.questions[i].question, node.questions[i].destination, node.questions[i].lovePoints);
         }
     }
 
