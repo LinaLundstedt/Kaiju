@@ -10,7 +10,7 @@ public class DateDialogueData : MonoBehaviour
     public string DateName;
     public TextAsset twineText;
     public Dejt dejt;
-
+    public Sprite profilePic;
     void ParseText(TextAsset txt)
     {
 

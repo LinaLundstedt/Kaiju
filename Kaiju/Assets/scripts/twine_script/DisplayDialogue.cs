@@ -10,6 +10,7 @@ public class DisplayDialogue : MonoBehaviour
     Text displayTxt;
     public Image playerimg;
     public Image DateImg;
+    Sprite CurrentDateImg;
     public Slider loveSlider;
     public GameObject AnswerPrefab;
     public GameObject questionsPanel;
@@ -34,14 +35,19 @@ public class DisplayDialogue : MonoBehaviour
     string FullTalk;
 
     bool canClick = true;
-
+    
 
     private void Awake()
     {
         Audio = gameObject.GetComponent<AudioSource>();
         Date = GameObject.FindGameObjectWithTag("Date");
         dejtData = Date.GetComponent<DateDialogueData>();
+
+
         playerimg.gameObject.SetActive(false);
+
+        CurrentDateImg = dejtData.profilePic;
+        DateImg.sprite = CurrentDateImg;
         DateImg.gameObject.SetActive(false);
         DateName.text = dejtData.DateName;
     }
