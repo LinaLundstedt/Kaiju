@@ -19,8 +19,9 @@ public class DateObject : MonoBehaviour
     //Det här kommer vi nog få bryta ut senare men vi kan börja så här.
     public GameObject[] Likes;
     public GameObject[] Dislikes;
+    public Sprite tinderPicture;
 
-    Mood _mood;
+    private Mood _mood = Mood.Neutral;
 
 
     int _moodPoints = 0;
@@ -31,6 +32,7 @@ public class DateObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         SwitchMood(Mood.Neutral);
     }
 
@@ -134,6 +136,8 @@ public class DateObject : MonoBehaviour
     //här kan vi få saker att hända när dejten börjar vara på ett nytt humör
     void StartMood(Mood mood)
     {
+        _mood = mood;
+
         switch (mood)
         {
             case Mood.Devestated:

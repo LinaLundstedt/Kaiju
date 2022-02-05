@@ -11,14 +11,16 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     private bool _swipedLeft;
     private int _cardIndex = 0;
 
-    public Sprite[] cards;
+
+    public Kaiju[] dejts;
 
 
 
 
     private void Start()
     {
-        gameObject.GetComponent<Image>().sprite = cards[_cardIndex];
+        gameObject.GetComponent<Image>().sprite = dejts[_cardIndex].tinderPic;
+        GetComponentInChildren<Text>().text = dejts[_cardIndex].kaijuName;
     }
 
 
@@ -81,13 +83,16 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             yield return null;
         }
 
+
+        // byt kort
         _cardIndex++;
-        if (_cardIndex > cards.Length - 1)
+        if (_cardIndex > dejts.Length - 1)
         {
             _cardIndex = 0;
         }
 
-        gameObject.GetComponent<Image>().sprite = cards[_cardIndex];
+        gameObject.GetComponent<Image>().sprite = dejts[_cardIndex].tinderPic;
+        GetComponentInChildren<Text>().text = dejts[_cardIndex].kaijuName;
         gameObject.transform.localPosition = _initialPosition;
         GetComponent<Image>().color = new Color(1, 1, 1, 1);
 
