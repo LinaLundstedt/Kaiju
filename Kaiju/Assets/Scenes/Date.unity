@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.27577484, g: 0.29461423, b: 0.4105397, a: 1}
+  m_IndirectSpecularColor: {r: 0.3035941, g: 0.32192177, b: 0.46246952, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -402,7 +402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 788, y: -520}
+  m_AnchoredPosition: {x: 781, y: 506}
   m_SizeDelta: {x: 300, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &225275757
@@ -513,7 +513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2740696131d5b6849a8b37f5e40c1170, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2740696131d5b6849a8b37f5e40c1170, type: 3}
       propertyPath: m_TagString
@@ -544,11 +544,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DateName: Evolutor
-  twineText: {fileID: 4900000, guid: 33b6ee69e939efc4f9ba6e544013e096, type: 3}
+  twineText: {fileID: 4900000, guid: 5fa712b3a17fea9499962fff3167598e, type: 3}
   dejt:
-    opener: You look just like your picture
-  profilePicHappy: {fileID: 0}
-  profilePicSad: {fileID: 0}
+    opener: Hi! I barely recognized you
+  profilePicHappy: {fileID: 21300000, guid: a36f9bb51a4b585408cca31b695948e7, type: 3}
+  profilePicSad: {fileID: 21300000, guid: bc83a364d883d1649b506de559d0431d, type: 3}
 --- !u!95 &276068623
 Animator:
   serializedVersion: 3
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9f3e6ce74c4f678478dd8225ff4b218a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eca7da1bc06b2d942aae1079e2d8aba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -683,8 +683,8 @@ MonoBehaviour:
   twineText: {fileID: 4900000, guid: 33b6ee69e939efc4f9ba6e544013e096, type: 3}
   dejt:
     opener: Hi! Great of you to come
-  profilePicHappy: {fileID: 0}
-  profilePicSad: {fileID: 0}
+  profilePicHappy: {fileID: 21300000, guid: 62fb61557c3bcd24bb21049035d5bf47, type: 3}
+  profilePicSad: {fileID: 21300000, guid: bd858cc9678ca2c46bb8bf5b981f053c, type: 3}
 --- !u!1 &381172211
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429954292}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.89, y: 0.65, z: 3.94}
+  m_LocalPosition: {x: -0.59, y: 0.65, z: 3.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1959,8 +1959,8 @@ MonoBehaviour:
   twineText: {fileID: 4900000, guid: 33b6ee69e939efc4f9ba6e544013e096, type: 3}
   dejt:
     opener: Hi! Cool to meet you
-  profilePicHappy: {fileID: 0}
-  profilePicSad: {fileID: 0}
+  profilePicHappy: {fileID: 21300000, guid: ed6a32b174e97b947a9aadfaefb7e905, type: 3}
+  profilePicSad: {fileID: 21300000, guid: 19ed908742d4a0b41b2e995ee82480e8, type: 3}
 --- !u!95 &1113753096
 Animator:
   serializedVersion: 3
@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20251869, g: 0.29443783, b: 0.3490566, a: 0.46666667}
+  m_Color: {r: 0.21217516, g: 0.28918427, b: 0.3018868, a: 0.36078432}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2329,13 +2329,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1569877322}
   m_Father: {fileID: 1210296559}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 785, y: -2}
+  m_AnchoredPosition: {x: 800, y: -2}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1226918000
@@ -2366,7 +2367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d55b850591107a4199089feb0de0a22, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc83a364d883d1649b506de559d0431d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2491,7 +2492,6 @@ RectTransform:
   m_Children:
   - {fileID: 1210296559}
   - {fileID: 225275756}
-  - {fileID: 1569877322}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2735,6 +2735,10 @@ PrefabInstance:
       value: KaijuOldie
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bfcae06ca0ea3fa4dae934fa3b75e6d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bfcae06ca0ea3fa4dae934fa3b75e6d0, type: 3}
       propertyPath: m_TagString
       value: Date
       objectReference: {fileID: 0}
@@ -2923,18 +2927,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569877321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 46363613}
-  m_Father: {fileID: 1268940804}
-  m_RootOrder: 2
+  m_Father: {fileID: 1226917999}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -212.94, y: 295.71}
-  m_SizeDelta: {x: 425.8858, y: 99.4237}
+  m_AnchoredPosition: {x: -125, y: 29}
+  m_SizeDelta: {x: 286.13, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569877323
 MonoBehaviour:
@@ -3311,8 +3315,8 @@ MonoBehaviour:
   twineText: {fileID: 4900000, guid: 33b6ee69e939efc4f9ba6e544013e096, type: 3}
   dejt:
     opener: Hi! You look... A little older than your profile said
-  profilePicHappy: {fileID: 21300000, guid: eb533a3da56a8554f9e855dceffde302, type: 3}
-  profilePicSad: {fileID: 21300000, guid: 9ed83683faddbc94d932450d3a31297c, type: 3}
+  profilePicHappy: {fileID: 21300000, guid: 573ed725d0182734f8fe4c58a231dac3, type: 3}
+  profilePicSad: {fileID: 21300000, guid: 32dd18eb15e7386468b444fafbe5db82, type: 3}
 --- !u!95 &1825986993
 Animator:
   serializedVersion: 3
@@ -4033,5 +4037,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8052589055069059391, guid: 7ab039a3d33792641924f5dd193dc691, type: 3}
+      propertyPath: profilePicSad
+      value: 
+      objectReference: {fileID: 21300000, guid: 46e72b56e7bf19945832928bbdd7fc7a, type: 3}
+    - target: {fileID: 8052589055069059391, guid: 7ab039a3d33792641924f5dd193dc691, type: 3}
+      propertyPath: profilePicHappy
+      value: 
+      objectReference: {fileID: 21300000, guid: 023d2868b42adea4298e2eb8475edfc9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ab039a3d33792641924f5dd193dc691, type: 3}
