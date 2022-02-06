@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da71f9dbfe048c24ea2d97dc665a3bde, type: 3}
-  m_Name: evo
+  m_Name: Ice_Cubix
   m_EditorClassIdentifier: 
-  age: 3500
-  kaijuName: Evo
-  tinderPic: {fileID: 21300000, guid: 431107e014e498c42811edbcfef2d2ee, type: 3}
-  likedProp: Beard
+  age: 2500
+  kaijuName: Ice Cubix
+  tinderPic: {fileID: 21300000, guid: 11831a4b44f94eb41a8893d71f37859a, type: 3}
+  likedProp: Beanie
   Likes: []
   Dislikes: []

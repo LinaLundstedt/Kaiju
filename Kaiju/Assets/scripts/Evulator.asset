@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da71f9dbfe048c24ea2d97dc665a3bde, type: 3}
-  m_Name: dog
+  m_Name: Evulator
   m_EditorClassIdentifier: 
-  age: 650
-  kaijuName: Doguy
-  tinderPic: {fileID: 21300000, guid: 45ef2484d197e4848992e42909c81f1a, type: 3}
-  likedProp: GnomeHat
+  age: 3500
+  kaijuName: Evulator
+  tinderPic: {fileID: 21300000, guid: 431107e014e498c42811edbcfef2d2ee, type: 3}
+  likedProp: Beard
   Likes: []
   Dislikes: []
