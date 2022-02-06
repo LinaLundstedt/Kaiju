@@ -8,18 +8,14 @@ public class Game_Manager : MonoBehaviour
 {
 
     public Choices choices;
+    private static string _selectedPropName = "";
     public bool LogChoices = true;
 
 
     //hämta vald prop så länge den är satt till ett värde
-    public GameObject GetSelectedProp()
+    public string GetSelectedPropName()
     {
-        if(choices.selectedProp != null)
-        {
-            return choices.selectedProp;
-        }
-
-        return null;
+        return _selectedPropName;
     }
 
     //hämta vald dejt så länge den är satt till ett värde
@@ -35,8 +31,9 @@ public class Game_Manager : MonoBehaviour
 
     public void SetSlectedProp(GameObject prop)
     {
-        Debug.Log("Selected Prop: " + prop.name);
         choices.selectedProp = prop;
+        _selectedPropName = choices.selectedProp.name;
+        Debug.Log(choices.selectedProp.name);
     }
 
     public void SetSlectedDejt(Kaiju dejt)
@@ -54,14 +51,6 @@ public class Game_Manager : MonoBehaviour
         SceneManager.LoadScene(i);
     }
 
-
-
-
-
-
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +60,10 @@ public class Game_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown("space"))
+        {
+            NextScene();
+        }
     }
 
 }

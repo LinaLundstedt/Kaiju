@@ -88,9 +88,11 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
         //Om dejten gilla vald prop
 
-        if(game_manager.GetSelectedProp() != null)
+        Debug.Log("SWIPE SCRIPT: game_manager.seletedProp: " + game_manager.GetSelectedPropName());
+
+        if(game_manager.GetSelectedPropName() != null)
         {
-            if (dejts[_cardIndex].likedProp == game_manager.GetSelectedProp().name)
+            if (dejts[_cardIndex].likedProp == game_manager.GetSelectedPropName())
             {
                 _isAMatch = true;
             }
