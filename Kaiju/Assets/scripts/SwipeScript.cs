@@ -10,22 +10,26 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     private float _distanceMoved;
     private bool _swipedLeft;
     private int _cardIndex = 0;
+    private bool _isAMatch = false;
 
-    public Sprite[] cards;
 
+    public Kaiju[] dejts;
+    public Game_Manager game_manager;
 
 
 
     private void Start()
     {
-        gameObject.GetComponent<Image>().sprite = cards[_cardIndex];
+        gameObject.GetComponent<Image>().sprite = dejts[_cardIndex].tinderPic;
+        GetComponentInChildren<Text>().text = dejts[_cardIndex].kaijuName;
     }
-
 
     public void OnDrag(PointerEventData eventData)
     {
-
-        transform.localPosition = new Vector2(transform.localPosition.x + eventData.delta.x, transform.localPosition.y + eventData.delta.y);
+        if (!_isAMatch)
+        {
+            transform.localPosition = new Vector2(transform.localPosition.x + eventData.delta.x, transform.localPosition.y + eventData.delta.y);
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -81,15 +85,60 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             yield return null;
         }
 
-        _cardIndex++;
-        if (_cardIndex > cards.Length - 1)
+
+
+
+        Debug.Log("SWIPE SCRIPT: game_manager.seletedProp: " + game_manager.GetSelectedPropName());
+
+        //Om dejten gilla vald prop
+        if (game_manager.GetSelectedPropName() != null)
         {
-            _cardIndex = 0;
+            if (dejts[_cardIndex].likedProp == game_manager.GetSelectedPropName())
+            {
+                _isAMatch = true;
+            }
         }
 
-        gameObject.GetComponent<Image>().sprite = cards[_cardIndex];
-        gameObject.transform.localPosition = _initialPosition;
-        GetComponent<Image>().color = new Color(1, 1, 1, 1);
+
+
+
+        // om det inte är en match
+        if (!_isAMatch)
+        {
+            // byt kort
+            _cardIndex++;
+            if (_cardIndex > dejts.Length - 1)
+            {
+                _cardIndex = 0;
+            }
+
+
+            //återställ position och färg
+            gameObject.GetComponent<Image>().sprite = dejts[_cardIndex].tinderPic;
+            GetComponentInChildren<Text>().text = dejts[_cardIndex].kaijuName;
+
+            gameObject.transform.localPosition = _initialPosition;
+            GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        }
+        else
+        {
+            //Om det är en match
+            gameObject.transform.localPosition = _initialPosition;
+            GetComponent<Image>().color = new Color(1, 1, 1, 1);
+            Transform match_text = transform.parent.Find("Match_Text");
+
+            if (match_text != null)
+            {
+                match_text.GetComponent<Text>().text = "MATCH!";
+
+            }           
+            Matched();
+        }
+    }
+
+    private void Matched()
+    {
+        game_manager.SetSlectedDejt(dejts[_cardIndex]);
 
     }
 }
