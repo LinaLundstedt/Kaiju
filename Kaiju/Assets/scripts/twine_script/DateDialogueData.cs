@@ -10,7 +10,8 @@ public class DateDialogueData : MonoBehaviour
     public string DateName;
     public TextAsset twineText;
     public Dejt dejt;
-    public Sprite profilePic;
+    public Sprite profilePicHappy;
+    public Sprite profilePicSad;
     void ParseText(TextAsset txt)
     {
 
@@ -116,8 +117,6 @@ public class DateDialogueData : MonoBehaviour
                     }
 
                     dejt.nodes.Add(node);
-                    //Just to test
-                    dejt.opener = "Hi! Thanks for meeting me here!";
 
 
             }

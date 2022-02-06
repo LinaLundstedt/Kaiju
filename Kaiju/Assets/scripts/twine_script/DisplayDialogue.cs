@@ -46,7 +46,7 @@ public class DisplayDialogue : MonoBehaviour
 
         playerimg.gameObject.SetActive(false);
 
-        CurrentDateImg = dejtData.profilePic;
+        CurrentDateImg = dejtData.profilePicHappy;
         DateImg.sprite = CurrentDateImg;
         DateImg.gameObject.SetActive(false);
         DateName.text = dejtData.DateName;
@@ -108,7 +108,7 @@ public class DisplayDialogue : MonoBehaviour
 
         FullTalk = dejten.opener;
         Debug.Log(dejten.opener);
-        playerTalk(FullTalk);
+        playerTalk(FullTalk, 1);
 
         currentNode = dejten.currentNode;
         nextNode = dejten.nodes[0];
@@ -138,16 +138,28 @@ public class DisplayDialogue : MonoBehaviour
            
             //Make the button go to next path
 
-            question.GetComponent<Button>().onClick.AddListener(() => { playerTalk(fullTalk);  loveSlider.value += pnts;});
+            question.GetComponent<Button>().onClick.AddListener(() => { playerTalk(fullTalk, pnts);  loveSlider.value += pnts;});
         }
     }
 
-    void playerTalk(string SpeeachString)
+    void playerTalk(string SpeeachString, int points)
     {
         playerTalking = true;
 
         //Change picture of who's talking
         playerimg.gameObject.SetActive(true);
+
+        if (points > 1)
+        {
+            CurrentDateImg = dejtData.profilePicHappy;
+        }
+        else if (points <= 0)
+        {
+            CurrentDateImg = dejtData.profilePicSad;
+        }
+
+        DateImg.sprite = CurrentDateImg;
+
         DateImg.gameObject.SetActive(false);
 
         foreach (Transform child in questionsPanel.transform)
