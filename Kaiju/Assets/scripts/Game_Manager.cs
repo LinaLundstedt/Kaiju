@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Game_Manager : MonoBehaviour
 {
@@ -44,6 +46,13 @@ public class Game_Manager : MonoBehaviour
         choices.selectedDejt = dejt;
     }
 
+
+    public void NextScene()
+    {
+        int i = SceneManager.GetActiveScene().buildIndex;
+        i++;
+        SceneManager.LoadScene(i);
+    }
 
 
 
