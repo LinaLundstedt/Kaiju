@@ -19,6 +19,7 @@ public class ChangeLook : MonoBehaviour
 
         CurrentProp = props[0];
         CurrentProp.SetActive(true);
+        game_manager.SetSlectedProp(CurrentProp);
     }
 
 
