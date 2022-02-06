@@ -1,7 +1,7 @@
 :: S01 {"position":"925,367.5","size":"100,100"}
 Yeah...* I don't usually get out much.* But I liked that picture of you crushing the aztecs ruins.* I'm a sucker for historical stuff!
 
-[[I usually destroy more urban places%1|S03]]
+[[I usually destroy more urban places%-1|S03]]
 [[Have you destroyed anything historical yourself?%5|S02]]
 
 :: S03 {"position":"802,528.5","size":"100,100"}
