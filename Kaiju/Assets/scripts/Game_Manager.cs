@@ -39,7 +39,10 @@ public class Game_Manager : MonoBehaviour
     public void SetSlectedDejt(Kaiju dejt)
     {
         Debug.Log("Selected Dejt: " + dejt.kaijuName);
-        choices.selectedDejt = dejt;
+
+
+
+        choices.selectedDejt = new Kaiju();
     }
 
 
