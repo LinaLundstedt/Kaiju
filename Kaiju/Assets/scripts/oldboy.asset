@@ -15,3 +15,6 @@ MonoBehaviour:
   age: 2147483647
   kaijuName: OldBoy
   tinderPic: {fileID: 21300000, guid: cb9ac1fb01b11514daf64bc9a92e1fae, type: 3}
+  likedProp: Beard
+  Likes: []
+  Dislikes: []

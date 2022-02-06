@@ -8,6 +8,8 @@ public class ChangeLook : MonoBehaviour
     int nr = 0;
     public static GameObject CurrentProp;
 
+    public Game_Manager game_manager;
+
     void Start()
     {
         foreach (GameObject obj in props)
@@ -32,6 +34,9 @@ public class ChangeLook : MonoBehaviour
         CurrentProp = props[nr];
 
         CurrentProp.SetActive(true);
+
+        game_manager.SetSlectedProp(CurrentProp);
+
     }
 
 }

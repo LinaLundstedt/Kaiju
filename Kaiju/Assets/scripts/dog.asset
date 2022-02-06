@@ -15,3 +15,6 @@ MonoBehaviour:
   age: 650
   kaijuName: Doguy
   tinderPic: {fileID: 21300000, guid: 45ef2484d197e4848992e42909c81f1a, type: 3}
+  likedProp: GnomeHat
+  Likes: []
+  Dislikes: []

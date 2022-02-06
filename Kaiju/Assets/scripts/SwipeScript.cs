@@ -10,9 +10,11 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     private float _distanceMoved;
     private bool _swipedLeft;
     private int _cardIndex = 0;
+    private bool _isAMatch = false;
 
 
     public Kaiju[] dejts;
+    public Game_Manager game_manager;
 
 
 
@@ -84,6 +86,18 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         }
 
 
+        //Om dejten gilla vald prop
+
+        if(game_manager.GetSelectedProp() != null)
+        {
+            if (dejts[_cardIndex].likedProp == game_manager.GetSelectedProp().name)
+            {
+                _isAMatch = true;
+            }
+        }
+       
+
+
         // byt kort
         _cardIndex++;
         if (_cardIndex > dejts.Length - 1)
@@ -91,10 +105,25 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             _cardIndex = 0;
         }
 
-        gameObject.GetComponent<Image>().sprite = dejts[_cardIndex].tinderPic;
-        GetComponentInChildren<Text>().text = dejts[_cardIndex].kaijuName;
-        gameObject.transform.localPosition = _initialPosition;
-        GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        if (!_isAMatch)
+        {
 
+            gameObject.GetComponent<Image>().sprite = dejts[_cardIndex].tinderPic;
+            GetComponentInChildren<Text>().text = dejts[_cardIndex].kaijuName;
+            gameObject.transform.localPosition = _initialPosition;
+            GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        }
+        else
+        {
+            Matched();
+        }
+
+    }
+
+
+    private void Matched()
+    {
+        game_manager.SetSlectedDejt(dejts[_cardIndex]);
+        Debug.Log("matched!");
     }
 }

@@ -14,6 +14,8 @@ public class Kaiju : ScriptableObject
 
     private Mood _mood = Mood.Neutral;
 
+    public string likedProp;
+
     public GameObject[] Likes;
     public GameObject[] Dislikes;
 

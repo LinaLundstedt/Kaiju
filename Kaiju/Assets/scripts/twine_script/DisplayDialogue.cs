@@ -41,7 +41,7 @@ public class DisplayDialogue : MonoBehaviour
     {
         Audio = gameObject.GetComponent<AudioSource>();
         Date = GameObject.FindGameObjectWithTag("Date");
-        //dejtData = Date.GetComponent<DateDialogueData>();
+        dejtData = Date.GetComponent<DateDialogueData>();
 
 
         playerimg.gameObject.SetActive(false);
