@@ -6,16 +6,20 @@ public class panic : MonoBehaviour
     public float movementDuration = 2.0f;
     public float pause = 2.0f;
     private bool hasArrived = false;
+    Vector3 targetPos = Vector3.zero;
 
     private void Update()
     {
+       
         if (!hasArrived)
         {
             hasArrived = true;
             pause = Random.Range(-pause, pause);
             float randX = Random.Range(-1.0f, 1.0f);
             float randZ = Random.Range(-1.0f, 1.0f);
-            StartCoroutine(MoveToPoint(new Vector3(randX, transform.position.y, randZ)));
+            targetPos = new Vector3(randX, transform.position.y, randZ);
+            StartCoroutine(MoveToPoint(targetPos));
+
         }
     }
 
