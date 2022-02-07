@@ -9,6 +9,7 @@ public class Game_Manager : MonoBehaviour
 
     public Choices choices;
     private static string _selectedPropName = "";
+    private static string _selectedDateName = "";
     public bool LogChoices = true;
 
 
@@ -19,44 +20,70 @@ public class Game_Manager : MonoBehaviour
     }
 
     //hämta vald dejt så länge den är satt till ett värde
-    public Kaiju GetSelectedDate()
+    public string GetSelectedDateName()
     {
-        if (choices.selectedDejt != null)
-        {
-            return choices.selectedDejt;
-        }
 
-        return null;
+        return _selectedDateName;
     }
 
     public void SetSlectedProp(GameObject prop)
     {
         choices.selectedProp = prop;
         _selectedPropName = choices.selectedProp.name;
-        Debug.Log(choices.selectedProp.name);
+        Debug.Log(_selectedPropName);
     }
 
     public void SetSlectedDejt(Kaiju dejt)
     {
-        Debug.Log("Selected Dejt: " + dejt.kaijuName);
-
-
-
-        choices.selectedDejt = new Kaiju();
+        choices.selectedDejt = dejt;
+        _selectedDateName = choices.selectedDejt.kaijuName;
+        Debug.Log(_selectedDateName);
     }
 
 
     public void NextScene()
     {
-        int i = SceneManager.GetActiveScene().buildIndex;
-        i++;
-        SceneManager.LoadScene(i);
+        try
+        {
+            int i = SceneManager.GetActiveScene().buildIndex;
+            i++;
+            SceneManager.LoadScene(i);
+        }
+        catch (System.Exception)
+        {
+  
+        }
+      
+    }
+
+    private void Awake()
+    {
+       
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        if (SceneManager.GetActiveScene().name == "Date")
+        {
+            Debug.Log("SELECTED DATE: " + _selectedDateName);
+            GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag("Date");
 
+            foreach (GameObject go in gameObjectArray)
+            {
+                Debug.Log(go.name);
+                if (go.name == _selectedDateName)
+                {
+                    Debug.Log("MATCH ON: " + _selectedDateName + " : " + go.name);
+                    go.SetActive(true);
+                }
+                else
+                {
+                    Debug.Log("NO MATCH ON: " + _selectedDateName + " : " + go.name);
+                    go.SetActive(false);
+                }
+            }
+        }
     }
 
     // Update is called once per frame
