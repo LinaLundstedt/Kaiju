@@ -23,7 +23,7 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         GetComponentInChildren<Text>().text = dejts[_cardIndex].kaijuName;
     }
 
-    public void OnDrag(PointerEventData eventData)
+        public void OnDrag(PointerEventData eventData)
     {
         if (!_isAMatch)
         {
