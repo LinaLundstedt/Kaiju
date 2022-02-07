@@ -903,11 +903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2740696131d5b6849a8b37f5e40c1170, type: 3}
       propertyPath: m_Name
-      value: Kaiju_Evolution
+      value: Evolutor
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2740696131d5b6849a8b37f5e40c1170, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2740696131d5b6849a8b37f5e40c1170, type: 3}
       propertyPath: m_TagString
@@ -1174,6 +1174,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381172211}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &407979150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1676.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 441.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278400207982325388, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632993903185810496, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
+      propertyPath: m_Name
+      value: Game_Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad2ed4ce345c4c24ea5eebfe100cdf6a, type: 3}
 --- !u!1001 &412183870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3966,11 +4023,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4021fde1fc0062f45aefb896dbbbf583, type: 2}
     - target: {fileID: 919132149155446097, guid: bfcae06ca0ea3fa4dae934fa3b75e6d0, type: 3}
       propertyPath: m_Name
-      value: KaijuOldie
+      value: Godzulta
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bfcae06ca0ea3fa4dae934fa3b75e6d0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bfcae06ca0ea3fa4dae934fa3b75e6d0, type: 3}
       propertyPath: m_TagString
@@ -5452,11 +5509,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5498855a800d07448ba2f0161d0db537, type: 3}
       propertyPath: m_Name
-      value: Kaiju_small
+      value: Minimon
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5498855a800d07448ba2f0161d0db537, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5498855a800d07448ba2f0161d0db537, type: 3}
       propertyPath: m_TagString
@@ -5534,7 +5591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7134232621162704455, guid: 7ab039a3d33792641924f5dd193dc691, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7514874357791356157, guid: 7ab039a3d33792641924f5dd193dc691, type: 3}
       propertyPath: m_RootOrder

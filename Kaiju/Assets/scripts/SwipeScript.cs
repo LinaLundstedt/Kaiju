@@ -17,7 +17,6 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     public Game_Manager game_manager;
 
 
-
     private void Start()
     {
         gameObject.GetComponent<Image>().sprite = dejts[_cardIndex].tinderPic;
@@ -139,6 +138,5 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     private void Matched()
     {
         game_manager.SetSlectedDejt(dejts[_cardIndex]);
-
     }
 }

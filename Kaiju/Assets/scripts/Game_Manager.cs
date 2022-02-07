@@ -8,7 +8,10 @@ public class Game_Manager : MonoBehaviour
 {
 
     public Choices choices;
+
     private static string _selectedPropName = "";
+    private static string _selectedDejtName = "";
+
     public bool LogChoices = true;
 
 
@@ -19,14 +22,9 @@ public class Game_Manager : MonoBehaviour
     }
 
     //hämta vald dejt så länge den är satt till ett värde
-    public Kaiju GetSelectedDate()
+    public string  GetSelectedDateName()
     {
-        if (choices.selectedDejt != null)
-        {
-            return choices.selectedDejt;
-        }
-
-        return null;
+        return _selectedDejtName;
     }
 
     public void SetSlectedProp(GameObject prop)
@@ -38,11 +36,8 @@ public class Game_Manager : MonoBehaviour
 
     public void SetSlectedDejt(Kaiju dejt)
     {
-        Debug.Log("Selected Dejt: " + dejt.kaijuName);
-
-
-
-        choices.selectedDejt = new Kaiju();
+        choices.selectedDejt = dejt;
+        _selectedDejtName = choices.selectedDejt.kaijuName;
     }
 
 
@@ -56,7 +51,30 @@ public class Game_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        if(SceneManager.GetActiveScene().name == "Date")
+        {
+            Debug.Log("Selected Date: " + _selectedDejtName);
 
+
+            //Hämta alla dates
+            GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag("Date");
+
+            Debug.Log("DATE COUNT : " + gameObjectArray.Length);
+
+            foreach (var go in gameObjectArray)
+            {
+                Debug.Log("FOUND DATE: " + go.name);
+                if(go.name.ToLower() == _selectedDejtName.ToLower())
+                {
+                    go.SetActive(true);
+                }
+                else
+                {
+                    go.SetActive(false);
+                }
+            }
+        }
     }
 
     // Update is called once per frame
@@ -67,5 +85,4 @@ public class Game_Manager : MonoBehaviour
             NextScene();
         }
     }
-
 }
