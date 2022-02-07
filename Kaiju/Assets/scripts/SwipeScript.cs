@@ -23,7 +23,7 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         GetComponentInChildren<Text>().text = dejts[_cardIndex].kaijuName;
     }
 
-        public void OnDrag(PointerEventData eventData)
+    public void OnDrag(PointerEventData eventData)
     {
         if (!_isAMatch)
         {
@@ -77,29 +77,20 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             else
             {
                 transform.localPosition = new Vector3(Mathf.SmoothStep(transform.localPosition.x, transform.localPosition.x + Screen.width, 4 * time), transform.localPosition.y, 0);
+                //Om dejten gilla vald prop
+                if (game_manager.GetSelectedPropName() != null)
+                {
+                    if (dejts[_cardIndex].likedProp == game_manager.GetSelectedPropName())
+                    {
+                        _isAMatch = true;
+                    }
+                }
             }
 
             //Gör kortet genomskinligt
             GetComponent<Image>().color = new Color(1, 1, 1, Mathf.SmoothStep(1, 0, 4 * time));
             yield return null;
         }
-
-
-
-
-        Debug.Log("SWIPE SCRIPT: game_manager.seletedProp: " + game_manager.GetSelectedPropName());
-
-        //Om dejten gilla vald prop
-        if (game_manager.GetSelectedPropName() != null)
-        {
-            if (dejts[_cardIndex].likedProp == game_manager.GetSelectedPropName())
-            {
-                _isAMatch = true;
-            }
-        }
-
-
-
 
         // om det inte är en match
         if (!_isAMatch)
@@ -130,7 +121,7 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             {
                 match_text.GetComponent<Text>().text = "MATCH!";
 
-            }           
+            }
             Matched();
         }
     }
