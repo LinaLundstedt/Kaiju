@@ -129,5 +129,6 @@ public class SwipeScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     private void Matched()
     {
         game_manager.SetSlectedDejt(dejts[_cardIndex]);
+        game_manager.NextScene();
     }
 }

@@ -23,6 +23,9 @@ public class DisplayDialogue : MonoBehaviour
     public AudioClip DateVoice;
     public AudioClip PlayerVoice;
 
+    public GameObject EndPanel;
+    public Image endImg;
+
     bool txtDone = true;
     bool dateAnswer = false;
     bool playerTalking = false;
@@ -39,6 +42,12 @@ public class DisplayDialogue : MonoBehaviour
 
     private void Awake()
     {
+
+    }
+
+    void Start()
+    {
+        EndPanel.SetActive(false);
         Audio = gameObject.GetComponent<AudioSource>();
         Date = GameObject.FindGameObjectWithTag("Date");
         dejtData = Date.GetComponent<DateDialogueData>();
@@ -50,10 +59,7 @@ public class DisplayDialogue : MonoBehaviour
         DateImg.sprite = CurrentDateImg;
         DateImg.gameObject.SetActive(false);
         DateName.text = dejtData.DateName;
-    }
 
-    void Start()
-    {
         displayTxt = displaySquare.GetComponentInChildren<Text>();
 
         Date = GameObject.FindGameObjectWithTag("Date");
@@ -118,6 +124,18 @@ public class DisplayDialogue : MonoBehaviour
     public void AskQuestion(string question, string path, int pnts)
     {
         GameObject q = createQuestion(question);
+
+
+        if (path.Contains("E"))
+        {
+            //DEJT SLUT
+            //Ask Gustav where to get points, then set end results here
+            q.GetComponent<Button>().onClick.AddListener(() => { EndPanel.SetActive(true); });
+           
+            return;
+        }
+
+
         q.GetComponent<Button>().onClick.AddListener(() => { SetNode(q, path, question, pnts); });
     }
 
@@ -201,11 +219,6 @@ public class DisplayDialogue : MonoBehaviour
     {
         for (int i = 0; i <dejtData.dejt.currentNode.questions.Count; i++)
         {
-            if(dejtData.dejt.currentNode.pathTitle.Contains("E"))
-            {
-                //DEJT SLUT
-                return;
-            }
 
                 AskQuestion(node.questions[i].question, node.questions[i].destination, node.questions[i].lovePoints);
         }
