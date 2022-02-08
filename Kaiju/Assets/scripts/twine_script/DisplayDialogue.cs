@@ -124,6 +124,18 @@ public class DisplayDialogue : MonoBehaviour
     public void AskQuestion(string question, string path, int pnts)
     {
         GameObject q = createQuestion(question);
+
+
+        if (path.Contains("E"))
+        {
+            //DEJT SLUT
+            //Ask Gustav where to get points, then set end results here
+            q.GetComponent<Button>().onClick.AddListener(() => { EndPanel.SetActive(true); });
+           
+            return;
+        }
+
+
         q.GetComponent<Button>().onClick.AddListener(() => { SetNode(q, path, question, pnts); });
     }
 
@@ -207,14 +219,6 @@ public class DisplayDialogue : MonoBehaviour
     {
         for (int i = 0; i <dejtData.dejt.currentNode.questions.Count; i++)
         {
-            if(dejtData.dejt.currentNode.pathTitle.Contains("E"))
-            {
-                //DEJT SLUT
-                //Ask Gustav where to get points, then set end results here
-
-                EndPanel.SetActive(true);
-                return;
-            }
 
                 AskQuestion(node.questions[i].question, node.questions[i].destination, node.questions[i].lovePoints);
         }

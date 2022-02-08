@@ -1,0 +1,71 @@
+:: S01 {"position":"860,383.5","size":"100,100"}
+Yeah?* I guess I can look more intimidating in real life maybe...*
+
+
+[[Are you sure you're a Kaiju?%-1|S02]]
+[[Yeah...That's it?%1|S03]]
+
+:: S02 {"position":"729,518.5","size":"100,100"}
+...*It's my height, isn't it?!*It's always the same*Nobody wants to date a Kaiju who's below 300 ft*It's a frickin obsession!*Ain't I big enough to crush a building?!*It's not the size that matters*It's the fury and destruction!*What about you?*What's the most impressive place you've destroyed?
+
+[[Singapore%1|S05]]
+[[New York%-1|S04]]
+
+:: S03 {"position":"1044,523.5","size":"100,100"}
+I know I can seem tough*But I'm really quite the romantic!*I know how to treat a monster!*I'd massage your tentacles after a long day of destruction*I'd surprice you with pickled germans on a regular Tuesday*That's just the kind of monster I am*What about you?
+
+[[I'm not really into that stuff...%-1|S06]]
+[[I love romance!%1|S07]]
+
+:: S04 {"position":"629,664.5","size":"100,100"}
+Seems a bit cliche if you ask me.* That place is so trashy you can barely tell someone's been destroying it*And the buildings are 
+ridiculously tall!*If you could eat any human dead or alive*Who would it be?
+
+[[The Rock%-1|211]]
+[[Napoleon%1|S12]]
+
+
+:: S05 {"position":"773,662.5","size":"100,100"}
+That's Awesome!* I know it's a small country*But it's still a whole country you destroyed!*That makes you pretty cool in my book!*Size doesn't matter!
+
+[[I think it does...%-1|S10]]
+[[Thanks! you're right!%1|S09]]
+
+:: S06 {"position":"975,668.5","size":"100,100"}
+Always the same!*They only want the bad monsters*It doesn't matter that you're a genuine and nice monster who would do anything for their mate*If a huge dinosaur kaiju shows up and spits lazer down their throats*That's the idiot they want.*I was hoping you would be different...
+
+[[I am different!%1|S09]]
+[[Is this big lazer spitting monster someone you know?%-1|S10]]
+
+:: S07 {"position":"1161,656.5","size":"100,100"}
+You do look like a classy monster!*I just knew you would get me*wearing that bowtie!*I get so mad at idiot monsters who can't appreciate a good thing!*They're all slugs!*No offence...*so ehm*If you could eat any human dead or alive*Who would it be?
+
+[[The Rock%-1|211]]
+[[Napoleon%1|S12]]
+
+
+:: S09 {"position":"785,826.5","size":"100,100"}
+You're a really special Kaiju!*I feel like I already know you*!*I've had so much bad luck on these dating apps.*But something about you and that cute bowtie made me optimistic!
+
+[[Wanna go back to my cave and get even more optimistic?%0|END]]
+
+
+:: S10 {"position":"937,842.5","size":"100,100"}
+I can't believe it!*What is it with you size obsessed kaijus?!*Would it hurt to just consider going out with a different sized monster?*Us bug mutants are really frickin big compared to the creatures we once came from!*But you never hear anyone talking about that!
+
+[[Maybe things can grow between us back at my cave?%0|END]]
+
+:: END {"position":"1003,1104.5","size":"100,100"}
+Double-click this passage to edit it.
+
+:: 211 {"position":"1313,884.5","size":"100,100"}
+The Rock?*That's an unusual choice...*Wouldn't he be a mouthfull?*I don't think I'd enjoy all those useless muscles...*I prefer bite sized humans
+
+
+[[Wanna come over and have some bite sized humans at my place?%0|END]]
+
+:: S12 {"position":"1123,861.5","size":"100,100"}
+Ah!*What a splendid choice!*A true legend among the humans!*I bet he would taste of bravery and dignity!*You have terrific taste!
+
+[[I'll show you a legend, if you wanna come back to my cave?%0|END]]
+^^^

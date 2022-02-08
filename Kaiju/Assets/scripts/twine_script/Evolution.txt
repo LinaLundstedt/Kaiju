@@ -56,4 +56,4 @@ That's a bit literal*No offence but...*The one eye thing seems kind of done*I me
 [[It's almost dawn.We could get back to my cave before the sun rises%0|END]]
 
 :: END {"position":"862,1097.5","size":"100,100"}
-Double-click this passage to edit it.
+^^^
