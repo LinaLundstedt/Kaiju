@@ -11699,6 +11699,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 489898567451172063, guid: 1336a6e7f76417045b73b48f5816972f, type: 3}
+      propertyPath: twineText
+      value: 
+      objectReference: {fileID: 4900000, guid: 15096cdc152687240993d9d951313e0c, type: 3}
     - target: {fileID: 724254868384735629, guid: 1336a6e7f76417045b73b48f5816972f, type: 3}
       propertyPath: m_Name
       value: IceCubix
@@ -12069,5 +12073,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9125636541826666459, guid: 83a165f434ee1fa45b9d65fccbbdd955, type: 3}
+      propertyPath: twineText
+      value: 
+      objectReference: {fileID: 4900000, guid: 19f60ff117711f2459fc8d2084bd3da2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83a165f434ee1fa45b9d65fccbbdd955, type: 3}
