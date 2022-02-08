@@ -58,12 +58,6 @@ public class Game_Manager : MonoBehaviour
 
     private void Awake()
     {
-       
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
         if (SceneManager.GetActiveScene().name == "Date")
         {
             Debug.Log("SELECTED DATE: " + _selectedDateName);
@@ -86,13 +80,19 @@ public class Game_Manager : MonoBehaviour
         }
     }
 
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+       /* if (Input.GetKeyDown("space"))
         {
             NextScene();
-        }
+        } */
     }
 
 }
