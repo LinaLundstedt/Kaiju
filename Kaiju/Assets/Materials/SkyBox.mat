@@ -82,9 +82,9 @@ Material:
     m_Floats:
     - DayNight_: 1
     - Vector1_3B315C2: 0.92
-    - Vector1_75E629A5: 0.04
+    - Vector1_75E629A5: 0.02
     - Vector1_79FD57E0: 0.87
-    - Vector1_A8E8B67E: 35.2
+    - Vector1_A8E8B67E: 33.69
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -118,7 +118,7 @@ Material:
     - Color_9ACEF402: {r: 0.5451228, g: 0.851226, b: 0.9245283, a: 0}
     - Color_A3B6CEE: {r: 0.254984, g: 0.27102846, b: 0.2830189, a: 0}
     - Color_E8C89266: {r: 0.8892307, g: 0.9433962, b: 0.734247, a: 0}
-    - Vector2_3B8D27C4: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_3B8D27C4: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

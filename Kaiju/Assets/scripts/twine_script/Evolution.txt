@@ -2,14 +2,14 @@
 Oh really?*I guess I tend to change my look quite a bit.*I like to switch things up!*What about you?
 
 [[I'm pretty conservative with my apperance%-1|S01]]
-[[I like to experiment with my look%2|S02]]
+[[I like to experiment with my look%1|S02]]
 
 
 :: S01 {"position":"818,440.5","size":"100,100"}
 I see...* I could never be like that!* I'm always looking for ways to improve and evolve.*I feel like that's the only way to live as an authentic monster
 
-[[Do you like traveling?%3|S03]]
-[[Where are you from?%0|S04]]
+[[Do you like traveling?%1|S03]]
+[[Where are you from?%-1|S04]]
 
 :: S02 {"position":"1171,444.5","size":"100,100"}
 You know what?*I could totally tell from your aura that you're a creative monster!*Who wants the same boring looking monster destroying your city every year?*Nobody!*If you change things up, you keep humans excited!
@@ -20,14 +20,14 @@ You know what?*I could totally tell from your aura that you're a creative monste
 :: S03 {"position":"775,611.5","size":"100,100"}
 omg, yes!*I'm such a free spirit*I love destroying different kind of cultures!*Just the other week I went to this secluded village in the rain forest*And I annihilated the whole tribe!*They even named me in their language, "Jujuby"*It means Idiot monster...* What about you? Do the humans have a nickname for you?
 
-[[They call me the Martian...I guess it's the tentacles%2|S05]]
-[[I've heard Cyclops a few times%0|S07]]
+[[They call me the Martian...I guess it's the tentacles%1|S05]]
+[[I've heard Cyclops a few times%-1|S07]]
 
 :: S04 {"position":"1110,614.5","size":"100,100"}
 I don't even know how to answer that*I'm an evolving monster*My soul travels and changes*I consider every place I've put my fish-legs for the night, to be "home".*What's your zodiac sign?
 
-[[I'm a Capricorn%5|S06]]
-[[I'm a Gemini%-5|S08]]
+[[I'm a Capricorn%1|S06]]
+[[I'm a Gemini%-1|S08]]
 
 :: S05 {"position":"874,787.5","size":"100,100"}
 What a beutiful name!* As if you're an extraterrestrial*Here to destroy before you move on to the next galaxy.*I really like that!

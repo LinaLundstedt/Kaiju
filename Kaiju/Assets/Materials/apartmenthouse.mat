@@ -115,7 +115,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_2B4D5406: {r: 0.3018868, g: 0.1751513, b: 0.22207291, a: 0}
+    - Color_2B4D5406: {r: 0.39449093, g: 0.40877494, b: 0.4245283, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

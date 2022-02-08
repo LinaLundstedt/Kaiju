@@ -25,6 +25,7 @@ public class DisplayDialogue : MonoBehaviour
 
     public GameObject EndPanel;
     public Image endImg;
+    Text endTxt;
 
     bool txtDone = true;
     bool dateAnswer = false;
@@ -48,6 +49,7 @@ public class DisplayDialogue : MonoBehaviour
     void Start()
     {
         EndPanel.SetActive(false);
+        endTxt = EndPanel.GetComponentInChildren<Text>();
         Audio = gameObject.GetComponent<AudioSource>();
         Date = GameObject.FindGameObjectWithTag("Date");
         dejtData = Date.GetComponent<DateDialogueData>();
@@ -129,7 +131,18 @@ public class DisplayDialogue : MonoBehaviour
         if (path.Contains("E"))
         {
             //DEJT SLUT
-            //Ask Gustav where to get points, then set end results here
+
+            if(loveSlider.value >= 3)
+            {
+                endImg.sprite = dejtData.profilePicHappy;
+                endTxt.text = "Sure!";
+            }
+            else if(loveSlider.value < 3)
+            {
+                endImg.sprite = dejtData.profilePicHappy;
+                endTxt.text = "I don't think so!";
+            }
+
             q.GetComponent<Button>().onClick.AddListener(() => { EndPanel.SetActive(true); });
            
             return;
@@ -151,8 +164,7 @@ public class DisplayDialogue : MonoBehaviour
                     nextNode = dejtData.dejt.nodes[i];
                 }
             }
-            //Give love points
-            Debug.Log(pnts);
+
            
             //Make the button go to next path
 
@@ -167,11 +179,11 @@ public class DisplayDialogue : MonoBehaviour
         //Change picture of who's talking
         playerimg.gameObject.SetActive(true);
 
-        if (points > 1)
+        if (points > 0)
         {
             CurrentDateImg = dejtData.profilePicHappy;
         }
-        else if (points <= 0)
+        else if (points < 0)
         {
             CurrentDateImg = dejtData.profilePicSad;
         }
