@@ -3,7 +3,7 @@ Yeah?* I guess I can look more intimidating in real life maybe...*
 
 
 [[Are you sure you're a Kaiju?%-1|S02]]
-[[Yeah...That's it?%1|S03]]
+[[Yeah...That's it!%1|S03]]
 
 :: S02 {"position":"729,518.5","size":"100,100"}
 ...*It's my height, isn't it?!*It's always the same*Nobody wants to date a Kaiju who's below 300 ft*It's a frickin obsession!*Ain't I big enough to crush a building?!*It's not the size that matters*It's the fury and destruction!*What about you?*What's the most impressive place you've destroyed?
@@ -18,8 +18,7 @@ I know I can seem tough*But I'm really quite the romantic!*I know how to treat a
 [[I love romance!%1|S07]]
 
 :: S04 {"position":"629,664.5","size":"100,100"}
-Seems a bit cliche if you ask me.* That place is so trashy you can barely tell someone's been destroying it*And the buildings are 
-ridiculously tall!*If you could eat any human dead or alive*Who would it be?
+Seems a bit cliche if you ask me.* That place is so trashy you can barely tell someone's been destroying it*And the buildings are ridiculously tall!*If you could eat any human dead or alive*Who would it be?
 
 [[The Rock%-1|211]]
 [[Napoleon%1|S12]]
@@ -50,7 +49,7 @@ You're a really special Kaiju!*I feel like I already know you*!*I've had so much
 [[Wanna go back to my cave and get even more optimistic?%0|END]]
 
 
-:: S10 {"position":"937,842.5","size":"100,100"}
+:: S10 {"position":"964,820.5","size":"100,100"}
 I can't believe it!*What is it with you size obsessed kaijus?!*Would it hurt to just consider going out with a different sized monster?*Us bug mutants are really frickin big compared to the creatures we once came from!*But you never hear anyone talking about that!
 
 [[Maybe things can grow between us back at my cave?%0|END]]
@@ -68,4 +67,3 @@ The Rock?*That's an unusual choice...*Wouldn't he be a mouthfull?*I don't think 
 Ah!*What a splendid choice!*A true legend among the humans!*I bet he would taste of bravery and dignity!*You have terrific taste!
 
 [[I'll show you a legend, if you wanna come back to my cave?%0|END]]
-^^^
