@@ -1371,7 +1371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1039123957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1503,7 +1503,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "This game was created for the Kaiju Game Jam in February 2022 by Gustav
-    Cleveman and Lina Lundstedt. \n\n\ntext font monogram by Datagoblin\n\n"
+    Cleveman and Lina Lundstedt. \n\n\ntext font monogram by Datagoblin\nAdditional
+    voxel buildings by Maxparata\n\n"
 --- !u!222 &1246076857
 CanvasRenderer:
   m_ObjectHideFlags: 0
