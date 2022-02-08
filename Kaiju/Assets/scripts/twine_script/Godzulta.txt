@@ -1,26 +1,26 @@
 :: S01 {"position":"1820,629.5","size":"100,100"}
-Yes, I know.* I don't know how to update my profile.* All this technology is making my head spin.* I hope you don't mind dating an old Kaiju like me.
+Yes.*I don't know how to update my profile.*All this technology is making my head spin.* I hope you don't mind dating an old Kaiju like me.
 
 
 [[I don't mind at all.%1|S02]]
 [[I thought the app updated age automatically.%-1|S03]]
 
 :: S02 {"position":"1598,688.5","size":"100,100"}
-How sweet.* I consider myself young at heart.* What do you youngsters do to keep bussy theese days?* Do you still terrorise and crush the townsfolk?
+How sweet.* I consider myself young at heart.*What do you youngsters do to keep bussy theese days?* Do you still terrorise and crush the townsfolk?
 
 
-[[I prefer destroying metropolitan areas. %-1|S04]]
-[[Yes we do. Same basic principle atleast. %1|S05]]
+[[I prefer destroying metropolitan areas.%-1|S04]]
+[[Yes we do. Same basic principle atleast.%1|S05]]
 
 :: S03 {"position":"2066,740.5","size":"100,100"}
 HUMBUG!* Let's not talk technology.* We're all here to have a good time.* Except for the crushed humans beneath us.* Do you think you could show this old Kaiju a good time?
 
 
-[[Ofcourse! %1|S05]]
-[[I'm not sure, how well do you do with modern metropolitan areas? %-1|S04]]
+[[Ofcourse!%1|S05]]
+[[I'm not sure, how well do you do with modern metropolitan areas?%-1|S04]]
 
 :: S04 {"position":"1458,896.5","size":"100,100"}
-Humans these days with their helicopters and lazers.* I miss the good old days when all they had was some bows and flaming arrows.* You know, I was quite a feared monster back in my days.
+Humans these days with their helicopters and lazers.*I miss the good old days when all they had was some bows and flaming arrows.* You know, I was quite a feared monster back in my days.
 
 [[I bet you still are.%1|S06]]
 [[Things have changed since then.%-1|S07]]
@@ -29,33 +29,33 @@ Humans these days with their helicopters and lazers.* I miss the good old days w
 
 
 :: S05 {"position":"1972,960.5","size":"100,100"}
-A lot of young monsters doubt us old timers ability to destroy villages.* But I don't belieave that much has changed. Do you doubt my ability to cause mayhem?
+A lot of young monsters doubt us old timers ability to destroy villages.*But I don't belieave that much has changed. Do you doubt my ability to cause mayhem?
 
 
 [[Quite alot has changed...%-1|S07]]
 [[I Don't doubt it for a second...%1|S06]]
 
 :: S06 {"position":"1718,1059.5","size":"100,100"}
-Sweety.* I Can't really hear what you are saying* but I can tell you are being kind.* I do like this spot here.* Did you create all this destruction and mayhem?
+Sweety.* I Can't really hear what you are saying* but I can tell you are being kind.*I do like this spot here.* Did you create all this destruction and mayhem?
 
 [[Yes I did. I wanted to impress you.%1|S12]]
 [[No I ordered it online in an app.%-1|S13]]
 
 :: S07 {"position":"1344,1083.5","size":"100,100"}
-Pff..* How much can humans have changed?* I could bring terror to any town I'm sure.
+Pff..* How much can humans have changed?*I could bring terror to any town I'm sure.
 
 
 [[I'm sorry. You're right.%1|S08]]
 [[They don't scare as easy theese days.%-1|S09]]
 
 :: S08 {"position":"1269,1231.5","size":"100,100"}
-This old monster still got some moves.* And not just in the destruction and doom department.* Maybe I can show you?
+This old monster still got some moves.* And not just in the destruction and doom department.*Maybe I can show you?
 
 
 [[I would love to see. Wanna show me tonight at my cave?%0|END]]
 
 :: S09 {"position":"1352,1433.5","size":"100,100"}
-You need to respect your elders.* Every tactic you kids use today are descendent and invented by older kaijus.* The 'stop and roar at the moon' tactic,* the 'show one eye in the window' tactic* and the 'tail slam earchquake'.* All invented by monsters in my generation. 
+You need to respect your elders.* Every tactic you kids use today are descendent and invented by older kaijus.*The 'stop and roar at the moon' tactic,* the 'show one eye in the window' tactic* and the 'tail slam earchquake'.*All invented by monsters in my generation. 
 
 [[I'm sorry, I didn't realize.%1|S10]]
 [[Nobody uses those anymore.%-1|S11]]
@@ -70,10 +70,7 @@ That's ok.* You just haven't been propperly educated on your history, sweet thin
 [[Soo, you want to come back to my cave and teach me? %0|END]]
 
 :: S11 {"position":"1190,1621.5","size":"100,100"}
-I don't have to take this!* This generation makes me sick.*
-With their Boomblasters and urban environments.* Back in my day you could go out in the wilderness and just fight another Kaiju.*
-But to be honest..* I don't get out much anymore.* If you wan't to bring me home to your cave* I won't say no. 
-
+I don't have to take this!* This generation makes me sick.*With their Boomblasters and urban environments.*Back in my day you could go out in the wilderness and just fight another Kaiju.*But to be honest..*I don't get out much anymore.* If you wan't to bring me home to your cave* I won't say no.
 
 [[Sounds good, Let's go. %10|END]]
 
@@ -89,7 +86,7 @@ Well, I guess it's better than nothing.* Back in my day romance was still alive 
 [[I feel romance is gender biased.%-1|S15]]
 
 :: S14 {"position":"1919,1309.5","size":"100,100"}
-I guess I understand.* It's not easy for young monsters finding the time theese days.* I'm just glad to be out meeting new monsters.* And you seem like a dashing young kaiju.* Can you show this old kaiju a good time?
+I guess I understand.* It's not easy for young monsters finding the time theese days.*I'm just glad to be out meeting new monsters.* And you seem like a dashing young kaiju.*Can you show this old kaiju a good time?
 
 
 
@@ -98,7 +95,7 @@ I guess I understand.* It's not easy for young monsters finding the time theese 
 [[I think the age difference is too big...%-1|S09]]
 
 :: S15 {"position":"2192,1284.5","size":"100,100"}
-Not att all!* Being romantic is not exclusive for one gender to be against another.* Don't try to throw modern phrases at this old lizard.*
+Not att all!* Being romantic is not exclusive for one gender to be against another.*Don't try to throw modern phrases at this old lizard.*
 Are you going to be rude all evening?
 
 [[I'm sorry. You're right.%1|S19]]
@@ -107,4 +104,4 @@ Are you going to be rude all evening?
 :: S19 {"position":"2164,1465.5","size":"100,100"}
 Now that we got that out of the way.* Maybe you could show me your cave?
 
-[[I would love too. %0|END]]
+[[I would love to. %0|END]]

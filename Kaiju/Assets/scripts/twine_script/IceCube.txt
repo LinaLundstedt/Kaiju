@@ -1,55 +1,50 @@
 :: S01 {"position":"6298.333333333333,2332.5000000000005","size":"100,100"}
-Hi! You too!* This is a great place for a first date.* I thrive on chaos.* It's just a bit too hot for me. 
+Hi! You too!*This is a great place for a first date.*I thrive on chaos.*It's just a bit too hot for me. 
 
 [[I thought you would shave before the date.%-1|S02]]
-[[I'm sorry to hear that. We don't have to stay long. %1|S03]]
+[[I'm sorry to hear that. We don't have to stay long.%1|S03]]
 
 :: S02 {"position":"6130,2479.1666666666674","size":"100,100"}
-They don't make razors my size.* And even if they did, my hair would grow back in minutes.* Also hairy is back in style.
+They don't make razors my size.*And even if they did, my hair would grow back in minutes.*Also hairy is back in style.
 
 [[I'm guessing you're from a colder region.%-1|S04]]
 [[That's a pretty cool feature.%1|S03]]
 
-
 :: S03 {"position":"6531.666666666668,2510.833333333335","size":"100,100"}
-Thanks!* I like your eye.* Many monsters say I have beautiful eyes,* but I think they're just saying that... They do give me great depth perception though.
+Thanks!*I like your eye.*Many monsters say I have beautiful eyes,*but I think they're just saying that...*They do give me great depth perception though.
 
 [[Three is the magic number!%1|S07]]
 [[I don't really know where to look when I talk to you.%-1|S08]]
 
-
 :: S04 {"position":"5956.666666666666,2617.5","size":"100,100"}
-Yes, I live high up in mountains in my cave.* I'm actually in town for surgery.* I thought I'd go on a date to get my mind off it.*Are you looking for a mating partner or do you have offspring already? 
+Yes, I live high up in mountains in my cave.*I'm actually in town for surgery.*I thought I'd go on a date to get my mind off it.*Are you looking for a mating partner or do you have offspring already? 
 
-[[I just ate my last offspring. %-1|S05]]
+[[I just ate my last offspring.%-1|S05]]
 [[I wouldn't mind creating offspring some with a beauty like you.%1|S06]]
 
-
 :: S05 {"position":"6186.666666666666,2640.8333333333344","size":"100,100"}
-Oh ok*. I guess I'll just grab me a person on my way home..
+Oh ok.*I guess I'll just grab me a person on my way home..
 
-[[We can make som offspring for snacks at my cave if you want. %-1|END]]
+[[We can make som offspring for snacks at my cave if you want.%-1|END]]
 [[Maybe WE could grab some on the way to my cave? I have central air...%1|END]]
 
 :: END {"position":"6230,3374.166666666667","size":"100,100"}
 Double-click this passage to edit it.
 
-
 :: S07 {"position":"6330,2797.5000000000005","size":"100,100"}
-That's what I always say!* I'm fine with any number of eyes as long as it's an odd number.* I think people put to much emphasis on looks and not on the amount of destruction and doom a monster bring.
+That's what I always say!*I'm fine with any number of eyes as long as it's an odd number.*I think people put to much emphasis on looks and not on the amount of destruction and doom a monster bring.
 
-[[I think looks are kind of important. %-1|S12]]
-[[I agree. A feared Kaiju is a beautiful Kaiju. %1|S11]]
+[[I think looks are kind of important.%-1|S12]]
+[[I agree. A feared Kaiju is a beautiful Kaiju.%1|S11]]
 
 :: S08 {"position":"6806.666666666667,2829.1666666666674","size":"100,100"}
-Either one is fine.* They work independently of each other.* Most monsters knows theese things.* How is not having any depth perception working out for you?
-
+Either one is fine.*They work independently of each other.*Most monsters knows theese things.*How is not having any depth perception working out for you?
 
 [[Sorry I offended you. They're all beautiful eyes.%1|S06]]
 [[No reason to get hostile.%-1|S13]]
 
 :: S06 {"position":"5693.333333333333,2774.1666666666674","size":"100,100"}
-Sweet talker...* How many eyes do you think our offspring would have?
+Sweet talker...*How many eyes do you think our offspring would have?
 
 [[Four. That's just basic math.%-1|S09]]
 [[As long as they love destruction and death, eyes are unimportant%1.|S10]]
@@ -60,28 +55,29 @@ I don't think that's how it works....
 [[Wanna come over to my cave and find out?%0|END]]
 
 :: S10 {"position":"5821.666666666666,2917.500000000001","size":"100,100"}
-So true.* Do you have air condition in your cave?* These fires are more than I can handle.
+So true.*Do you have air condition in your cave?*These fires are more than I can handle.
 
 [[Yes, I have central air. Let's get you out of this heat. %1|END]]
 
-:: S12 {"position":"6560,3029.1666666666674","size":"100,100"}
-That's kind of weird since you are no looker yourself. Well I guess this is another evening wasted on a monster with superficial values. 
-
-[[I never said you're not pretty. %1|S06]]
-[[I guess so. %-1|S14]]
-
 :: S11 {"position":"6343.333333333333,3050.833333333334","size":"100,100"}
-Well said.* Hearing you say that really makes me want to reduce an untouched town to smoldering rubble.* Do you know of any city or town close by?
+Well said.* Hearing you say that really makes me want to reduce an untouched town to smoldering rubble.*Do you know of any city or town close by?
 
 [[There's an untouched town on the way to my cave. Wanna come?%1|END]]
 [[I prefer to demolish alone. Wanna just go straight to my cave?%-1|END]]
 
-:: S13 {"position":"6806.666666666667,2980.833333333334","size":"100,100"}
-I'm going to head back to my cave hotel.* Another evening wasted on a monster with superficial values.
+:: S12 {"position":"6560,3029.1666666666674","size":"100,100"}
+That's kind of weird since you are no looker yourself.*Well I guess this is another evening wasted on a monster with superficial values. 
 
-[[Want to come back to my cave first? %0|END]]
+[[I never said you're not pretty.%1|S06]]
+[[I guess so.%-1|S14]]
+
+:: S13 {"position":"6806.666666666667,2980.833333333334","size":"100,100"}
+I'm going to head back to my cave hotel.*Another evening wasted on a monster with superficial values.
+
+[[Want to come visit my cave first? %0|END]]
 
 :: S14 {"position":"6603.333333333333,3207.5000000000005","size":"100,100"}
-....* Well..
+....*Well..
 
 [[Do you want to come to my cave anyway?%0|END]]
+^^^
