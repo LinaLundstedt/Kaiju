@@ -5,7 +5,7 @@ Hi! You too!* This is a great place for a first date.* I thrive on chaos.* It's 
 [[I'm sorry to hear that. We don't have to stay long. %1|S06]]
 
 :: S02 {"position":"6130,2479.1666666666674","size":"100,100"}
-They don't make razors my size.* And even if they did, my hair would grow back in minutes.* Also hairy is back in style again.
+They don't make razors my size.* And even if they did, my hair would grow back in minutes.* Also hairy is back in style.
 
 [[I'm guessing you're from a colder region.%-1|S04]]
 [[That's a pretty cool feature.%1|S06]]
