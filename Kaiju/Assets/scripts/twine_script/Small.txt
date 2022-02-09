@@ -1,7 +1,6 @@
 :: S01 {"position":"860,383.5","size":"100,100"}
 Yeah?* I guess I can look more intimidating in real life maybe...*
 
-
 [[Are you sure you're a Kaiju?%-1|S02]]
 [[Yeah...That's it!%1|S03]]
 
@@ -20,7 +19,7 @@ I know I can seem tough*But I'm really quite the romantic!*I know how to treat a
 :: S04 {"position":"629,664.5","size":"100,100"}
 Seems a bit cliche if you ask me.* That place is so trashy you can barely tell someone's been destroying it*And the buildings are ridiculously tall!*If you could eat any human dead or alive*Who would it be?
 
-[[The Rock%-1|211]]
+[[The Rock%-1|S11]]
 [[Napoleon%1|S12]]
 
 
@@ -39,7 +38,7 @@ Always the same!*They only want the bad monsters*It doesn't matter that you're a
 :: S07 {"position":"1161,656.5","size":"100,100"}
 You do look like a classy monster!*I just knew you would get me*wearing that bowtie!*I get so mad at idiot monsters who can't appreciate a good thing!*They're all slugs!*No offence...*so ehm*If you could eat any human dead or alive*Who would it be?
 
-[[The Rock%-1|211]]
+[[The Rock%-1|S11]]
 [[Napoleon%1|S12]]
 
 
@@ -55,9 +54,9 @@ I can't believe it!*What is it with you size obsessed kaijus?!*Would it hurt to 
 [[Maybe things can grow between us back at my cave?%0|END]]
 
 :: END {"position":"1003,1104.5","size":"100,100"}
-Double-click this passage to edit it.
 
-:: 211 {"position":"1313,884.5","size":"100,100"}
+
+:: S11 {"position":"1313,884.5","size":"100,100"}
 The Rock?*That's an unusual choice...*Wouldn't he be a mouthfull?*I don't think I'd enjoy all those useless muscles...*I prefer bite sized humans
 
 

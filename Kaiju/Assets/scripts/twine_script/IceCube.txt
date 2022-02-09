@@ -47,7 +47,7 @@ Either one is fine.*They work independently of each other.*Most monsters knows t
 Sweet talker...*How many eyes do you think our offspring would have?
 
 [[Four. That's just basic math.%-1|S09]]
-[[As long as they love destruction and death, eyes are unimportant%1.|S10]]
+[[As long as they love destruction and death, eyes are unimportant%1|S10]]
 
 :: S09 {"position":"5616.666666666666,2927.5000000000005","size":"100,100"}
 I don't think that's how it works....

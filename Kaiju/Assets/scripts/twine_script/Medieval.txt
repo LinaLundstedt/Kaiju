@@ -7,13 +7,13 @@ Yeah...* I don't usually get out much.* But I liked that picture of you crushing
 :: S03 {"position":"836,409.5","size":"100,100"}
 Uhu...* That's not really my thing.* So where are you from anyway?
 
-[[I'm from the Japanese coast%3|S04]]
-[[I'm from a family of mutaded jellyfish outside of Fukushima%-2|S05]]
+[[I'm from the Japanese coast%1|S04]]
+[[I'm from a family of mutaded jellyfish outside of Fukushima%-1|S05]]
 
 :: S02 {"position":"1079,396.5","size":"100,100"}
 I ruined a couple of castles back in college* But nowadays I prefer to stay in my cave.* I used to go out to corrupt the minds of the innocent*Or I'd go out to eat a virgin every full moon or so*But The innocent are so rare these days.*Not to mention the virgins!
 
-[[I like eating out too!%0|S07]]
+[[I like eating out too!%-1|S07]]
 [[I'm also more of a chill in the cave kind of monster%1|S06]]
 
 :: END {"position":"1001,1300.5","size":"100,100"}
@@ -23,7 +23,7 @@ Well...* GET RESULTS
 That's cool!* I'm from a deep forest in Poland myself.*We aren't that many left in Europe these days...*The place got really secular.*But there's enough superstitious old homophobes where I live to make me feel at home*What do you eat in Japan?
 
 [[I like influencer tempura%1|S08]]
-[[Athlete onigiri is one of my favourites%0|S09]]
+[[Athlete onigiri is one of my favourites%-1|S09]]
 
 :: S05 {"position":"927,566.5","size":"100,100"}
 Oh...*So you're a chemical freak of nature type of monster.*I'm more of a mythical being myself.*Naturally born out of people's fears and imaginations.
@@ -40,26 +40,30 @@ Staying in the cave is the best!*Nowadays I just update my wikipedia page a few 
 :: S07 {"position":"1073,553.5","size":"100,100"}
 I actually just get the virgins to keep my myth alive*But I prepare and cook them at my cave*Human babies on my own sourdough toast*There's nothing better!*What do you like eating?
 
-[[I love a good athlete%0|S09]]
+[[I love a good athlete%-1|S09]]
 [[I like to eat influencers%1|S08]]
 
 :: S08 {"position":"1194,841.5","size":"100,100"}
 Ah yes!* I like those!* Pride is one of my favourite deadly sins*And after they've been on one of those hauls or mukbangs!*oh the gluttoney!*I love that combination!
 
-[[Speaking of food. How about we continue this conversation at my cave over a couple of highschool students?%0|END]]
+[[Speaking of food. How about we continue this conversation at my cave over a couple of highschool students?%-1|END]]
+[[Wanna commit some sins back at my cave?%1|END]]
 
 :: S09 {"position":"877,845.5","size":"100,100"}
 I don't care much for those...* Too much muscles, not enough fear* I prefer my food spicy* With lots of sins and anxieties.*I'm old school like that.
 
 [[Speaking of food. How about we continue this conversation at my cave over a couple of highschool students?%0|END]]
+[[Wanna commit some sins back at my cave?%1|END]]
 
 :: S11 {"position":"1341,800.5","size":"100,100"}
 ehm...*Yes...*Phenex and Orobas*They're both massive A-holes*Whenever I called Orobas he'd just insult me so much!*Then he'd say "Oh but I'm a truth teller!"*Like that's an excuse!*And Phenex is one of those annoying monsters who just can't do anything wrong!*He'll pretend to be nice to your face*But then you find out he cut off your tail while you were sleeping!
 
-[[I'd love to hear more about your demon brothers.Maybe we could continue this at my place?%0|END]]
+[[I'd love to hear more about your demon brothers.Maybe we could continue this at my place?%-1|END]]
+[[I can make you forget about your family if you want to come back to my cave?%1|END]]
 
 :: S12 {"position":"1030,818.5","size":"100,100"}
 I like cooking!*Especially toxic brews that I mix into the food of humans*I make a really good miserable love potion!*Not to mention my diarreah powder!
 
-[[Speaking of food. How about we continue this conversation at my cave over a couple of highschool students?%0|END]]
+[[Speaking of food. How about we continue this conversation at my cave over a couple of highschool students?%-1|END]]
+[[Maybe we could cook something together back at my cave?%1|END]]
 ^^^

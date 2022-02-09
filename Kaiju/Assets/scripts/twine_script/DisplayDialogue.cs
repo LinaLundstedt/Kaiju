@@ -20,7 +20,7 @@ public class DisplayDialogue : MonoBehaviour
     DateDialogueData dejtData;
 
     AudioSource Audio;
-    public AudioClip DateVoice;
+    AudioClip DateVoice;
     public AudioClip PlayerVoice;
 
     public GameObject EndPanel;
@@ -53,7 +53,7 @@ public class DisplayDialogue : MonoBehaviour
         Audio = gameObject.GetComponent<AudioSource>();
         Date = GameObject.FindGameObjectWithTag("Date");
         dejtData = Date.GetComponent<DateDialogueData>();
-
+        DateVoice = dejtData.Voice;
 
         playerimg.gameObject.SetActive(false);
 
@@ -88,7 +88,6 @@ public class DisplayDialogue : MonoBehaviour
 
                 if (currentSenNr >= fullSentanceNr)
                 {
-                    Debug.Log("end of date talking");
                     txtDone = true;
                     Question(nextNode);
                     dateAnswer = false;
@@ -102,6 +101,7 @@ public class DisplayDialogue : MonoBehaviour
                     DateImg.gameObject.SetActive(true);
                     nextSentence = SentenceCut(currentSenNr, currentNode.clientTxt);
                     StartCoroutine(TypeText(nextSentence, displayTxt, DateVoice));
+
                 }
 
 
@@ -115,7 +115,6 @@ public class DisplayDialogue : MonoBehaviour
     {
 
         FullTalk = dejten.opener;
-        Debug.Log(dejten.opener);
         playerTalk(FullTalk, 1);
 
         currentNode = dejten.currentNode;
@@ -132,24 +131,34 @@ public class DisplayDialogue : MonoBehaviour
         {
             //DEJT SLUT
 
-            if(loveSlider.value >= 3)
+            if (loveSlider.value >= 3)
             {
                 endImg.sprite = dejtData.profilePicHappy;
                 endTxt.text = "Sure!";
             }
             else if(loveSlider.value < 3)
             {
-                endImg.sprite = dejtData.profilePicHappy;
+                endImg.sprite = dejtData.profilePicSad;
                 endTxt.text = "I don't think so!";
             }
 
-            q.GetComponent<Button>().onClick.AddListener(() => { EndPanel.SetActive(true); });
+            q.GetComponent<Button>().onClick.AddListener(() => { EndPanel.SetActive(true);
+                if (DateVoice != null)
+                {
+                    Audio.clip = DateVoice;
+                    Audio.Play();
+                }
+;
+            });
            
             return;
         }
 
 
-        q.GetComponent<Button>().onClick.AddListener(() => { SetNode(q, path, question, pnts); });
+        q.GetComponent<Button>().onClick.AddListener(() => 
+        {
+            SetNode(q, path, question, pnts);
+        });
     }
 
     public void SetNode(GameObject question, string path, string fullTalk, int pnts)
@@ -255,12 +264,6 @@ public class DisplayDialogue : MonoBehaviour
         float pause = 0.03f;
         txtObj.text = "";
 
-
-        if (voice != null)
-        {
-            Audio.clip = voice;
-            Audio.Play();
-        }
 
         while (index <= message.Length)
         {

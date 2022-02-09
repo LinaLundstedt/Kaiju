@@ -7097,6 +7097,7 @@ GameObject:
   - component: {fileID: 1268940802}
   - component: {fileID: 1268940801}
   - component: {fileID: 1268940800}
+  - component: {fileID: 1268940805}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7123,7 +7124,6 @@ MonoBehaviour:
   questionsPanel: {fileID: 1099103238}
   displaySquare: {fileID: 1739494865}
   DateName: {fileID: 46363611}
-  DateVoice: {fileID: 0}
   PlayerVoice: {fileID: 0}
   EndPanel: {fileID: 1407020610}
   endImg: {fileID: 942462570}
@@ -7211,6 +7211,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!82 &1268940805
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268940799}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1278518992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7588,13 +7684,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306673417}
-  m_LocalRotation: {x: 0.10979571, y: -0.9439774, z: 0.21467586, w: -0.22531272}
+  m_LocalRotation: {x: 0.03177012, y: -0.9650141, z: 0.23902193, w: 0.10298993}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 20.844, y: -210.372, z: -18.985}
+  m_LocalEulerAnglesHint: {x: 27.896, y: -168.011, z: -0.783}
 --- !u!4 &1354617718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4563802948693442, guid: 67a684e320da6e7439421a07e3fa265c, type: 3}
@@ -11700,6 +11796,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 489898567451172063, guid: 1336a6e7f76417045b73b48f5816972f, type: 3}
+      propertyPath: Voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 47bd79916d7310243afe21b4cf447b48, type: 3}
+    - target: {fileID: 489898567451172063, guid: 1336a6e7f76417045b73b48f5816972f, type: 3}
       propertyPath: twineText
       value: 
       objectReference: {fileID: 4900000, guid: 15096cdc152687240993d9d951313e0c, type: 3}
@@ -11764,6 +11864,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1548713813474649583, guid: 7b86eb1f8cc7b074db7bbf2ec50128a2, type: 3}
+      propertyPath: Voice
+      value: 
+      objectReference: {fileID: 8300000, guid: e9fc062cd6eb8e7438c48977c7793874, type: 3}
     - target: {fileID: 1855283845526155927, guid: 7b86eb1f8cc7b074db7bbf2ec50128a2, type: 3}
       propertyPath: m_Name
       value: Belsebub
@@ -11895,6 +11999,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3442577836523451840, guid: 7151bdb4c24ddac45a5f9b34bce04653, type: 3}
+      propertyPath: Voice
+      value: 
+      objectReference: {fileID: 8300000, guid: c1ebd06f7c4aa7c4cad61c5da606b3fc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7151bdb4c24ddac45a5f9b34bce04653, type: 3}
 --- !u!1001 &8542898551831757524
@@ -11997,6 +12105,10 @@ PrefabInstance:
       value: 0.057
       objectReference: {fileID: 0}
     - target: {fileID: 8542898551520206094, guid: e3e4a462b58cbdd49af81a7cf3ca1304, type: 3}
+      propertyPath: Voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 523353c7e10ccae41ad32505cf7610b7, type: 3}
+    - target: {fileID: 8542898551520206094, guid: e3e4a462b58cbdd49af81a7cf3ca1304, type: 3}
       propertyPath: twineText
       value: 
       objectReference: {fileID: 4900000, guid: d4b0f3e4cfa3db4449fa9efd51522709, type: 3}
@@ -12073,6 +12185,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9125636541826666459, guid: 83a165f434ee1fa45b9d65fccbbdd955, type: 3}
+      propertyPath: Voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 1574930c046e48f498da3b7aaf71a929, type: 3}
     - target: {fileID: 9125636541826666459, guid: 83a165f434ee1fa45b9d65fccbbdd955, type: 3}
       propertyPath: twineText
       value: 

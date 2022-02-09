@@ -30,14 +30,14 @@ public class Game_Manager : MonoBehaviour
     {
         choices.selectedProp = prop;
         _selectedPropName = choices.selectedProp.name;
-        Debug.Log(_selectedPropName);
+
     }
 
     public void SetSlectedDejt(Kaiju dejt)
     {
         choices.selectedDejt = dejt;
         _selectedDateName = choices.selectedDejt.kaijuName;
-        Debug.Log(_selectedDateName);
+
     }
 
 
@@ -68,12 +68,12 @@ public class Game_Manager : MonoBehaviour
                 Debug.Log(go.name);
                 if (go.name == _selectedDateName)
                 {
-                    Debug.Log("MATCH ON: " + _selectedDateName + " : " + go.name);
+
                     go.SetActive(true);
                 }
                 else
                 {
-                    Debug.Log("NO MATCH ON: " + _selectedDateName + " : " + go.name);
+
                     go.SetActive(false);
                 }
             }

@@ -12,6 +12,7 @@ public class DateDialogueData : MonoBehaviour
     public Dejt dejt;
     public Sprite profilePicHappy;
     public Sprite profilePicSad;
+    public AudioClip Voice;
     void ParseText(TextAsset txt)
     {
 
@@ -64,6 +65,7 @@ public class DateDialogueData : MonoBehaviour
                             //split between | to get both question and destination
                             //Get the love points
                             love = Questions[f].Split('%', '|')[1];
+                            Debug.Log(love);
                             thisLove = Int32.Parse(love);
 
                             CurrentLine = Questions[f].Remove(Questions[f].Length - 3);
@@ -90,8 +92,9 @@ public class DateDialogueData : MonoBehaviour
 
 
                                     node.questions.Add(question);
-                                }
 
+                                }
+                            Debug.Log(thisQuestion + " " + thisLove + " " + thisDestination);
                         }
                     }
 
@@ -145,7 +148,6 @@ public class DateDialogueData : MonoBehaviour
                 return result;
             }
         }
-        Debug.Log(result);
         return result;
     }
 }
